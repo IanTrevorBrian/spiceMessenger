@@ -3,6 +3,9 @@ import 'registration_screen.dart';
 import 'login_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:spicy_chat/components/rounded_button.dart';
+import 'package:spicy_chat/constants.dart';
+
+
 
 class WelcomeScreen extends StatefulWidget {
   static String id = 'welcome_screen'; //static modifies the var so as it is associated with the class
@@ -32,13 +35,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 ),
                 AnimatedTextKit(
                   animatedTexts: [
-                    WavyAnimatedText(
+                    ColorizeAnimatedText(
                       'Spice Chat',
-                      textStyle: TextStyle(
-                        color: Colors.white,
-                        fontSize: 45.0,
-                        fontWeight: FontWeight.w900,
-                      ),
+                      textStyle: colorizeTextStyle1,
+                      colors: colorizeColors,
                     ),
                     // WavyAnimatedText(
                     //   'Be awesome',
@@ -73,7 +73,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             SizedBox(
               height: 48.0,
             ),
-            RoundedButton(title: 'Log In',
+            RoundedButton(
+              title: 'Log In',
               color: Colors.blue,
               onPressed: () {
                 Navigator.pushNamed(context, LoginScreen.id);

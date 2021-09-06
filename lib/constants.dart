@@ -49,5 +49,9 @@ const colorizeTextStyle = TextStyle(
   fontFamily: 'Horizon',
 );
 
-
+const colorizeTextStyle1 = TextStyle(
+  fontSize: 45.0,
+  fontWeight: FontWeight.w900,
+  fontFamily: 'Horizon',
+);
 
