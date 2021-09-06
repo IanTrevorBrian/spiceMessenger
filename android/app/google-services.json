@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "796476779023",
+    "project_id": "spice-chat-827a9",
+    "storage_bucket": "spice-chat-827a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796476779023:android:309aa47f980acec348917a",
+        "android_client_info": {
+          "package_name": "com.SpicySecDef.spicy_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796476779023-ruhkc9mv72ml4905ds2ciadh08fe866m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArwKlnmTuFd8CgfQSFPFRCkh3ysbQKaeE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796476779023-ruhkc9mv72ml4905ds2ciadh08fe866m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
