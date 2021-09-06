@@ -171,14 +171,14 @@ class MessageBubble extends StatelessWidget {
       child: Column(
         crossAxisAlignment: isMe ? CrossAxisAlignment.end : CrossAxisAlignment.start, //pushes the bubbles to furthest(one side) end of the right
         children: [
-          Text(sender, style: TextStyle(fontSize: 10.0,color: Colors.white),),
+          Text(sender, style: TextStyle(fontSize: 10.0,color: isMe ? Colors.purple : Colors.green),),
           Material(
             borderRadius: isMe ? BorderRadius.only(topLeft: Radius.circular(30.0),bottomLeft: Radius.circular(30.0),bottomRight: Radius.circular(30.0)) : BorderRadius.only(topRight: Radius.circular(30.0),bottomRight: Radius.circular(30.0), bottomLeft: Radius.circular(30.0)),
             elevation: 5.0,
-            color: isMe ? Colors.blue : Colors.green,  //this is so as to differentiate user bubbles depending on who sent the message
+            color: isMe ? Colors.purple : Colors.green,  //this is so as to differentiate user bubbles depending on who sent the message
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Text(text, style: TextStyle(fontSize: 17 ,color: isMe ?  Colors.white: Colors.black,),),
+                child: Text(text, style: TextStyle(fontSize: 17 ,color: Colors.black,),),
               )
           ),
         ],
